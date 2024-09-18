@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pree.css">
+    <style>
+        marquee{
+            
+            font-size: 50px;
+            background-color: aqua;
+        }
+        div{
+            border: 2px solid red;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <DIV>
+        <marquee>CSS</marquee>
+        <p>- The fullform of CSS is: <b>Cascading Style Sheets</b></p>
+        <p><b>- There are 3 ways to insert css:</b><br>
+            1.Inline CSS<br>
+            2.Internal CSS<br>
+            3.External CSS<br>
+        </p>
+
+        <p><b>1.Inline CSS:</b> By using style attribute inside the HTML elements.</p>
+        <pre>Example:
+     < h1 style="color:red;">A Blue Heading< /h2>
+        </pre>
+
+        <p><b>2.Internal CSS:</b> By using a < style > element in the < head > section.</style></p>
+        <pre>Example:
+    < style>
+        body{
+            background-color: green;
+            color:blue;
+            color:red;
+        }
+    < /style>
+        </pre>
+
+        <p><b>3.External CSS:</b> By using a < link > element to link to an external CSS file.</p>
+        <pre>Exampe:
+    < link rel="stylesheet" href="styles.css">
+        </pre>
+
+        <p><b>Priority:</b><br>
+            1.Inline CSS<br>
+            2.Internal and External CSS depends on the updated tag in the HTML.        
+        </p>
+
+        <pre>Note:
+    p{
+        color:red !important; // !important adds priority weightage.
+    }
+        </pre>
+
+        <p><h2 style="color:brown">CSS Selectors:</h2>Selectors are used to find or pointout the HTML elements you want to style.</p>
+        <p><b>Selectors are divided into 5 categories:</b><br>
+          1.Simple selectors<br>
+          2.Combinator selectors<br>
+          3.Pseudo-class selectors<br>
+          4.Pseudo-elements selectors<br>
+          5.Attribute selectors  
+        </p>
+        <p><b>1.Simple Selectors:</b><br>
+            1) class selector (.)<br>
+            2) Id selector (#)<br>
+            3) Element selector<br>
+            4) Grouping selector<br>
+            5) Universal selectors (*)
+        </p>
+
+        <p><b>1) class selector:</b> The class selector selects HTML elements with a specific class attribute.</p>
+        <pre>Example:
+    .center{
+        text-align: center;
+        color: red;
+    }
+        </pre>
+
+        <p><b>2) Id selector:</b> The id of an element is unique within a page, so the id selector is used to select one unique element.</p>
+        <pre>Example:
+    #id{
+        text-align: center;
+        color: red;
+    }
+        </pre>
+
+        <p><b>3) Element selector:</b> The element selector selects HTML elements based on the element name.</p>
+        <pre>Example:
+    p{
+        text-align: center;
+        color: red;
+    }
+        </pre>
+
+        <p><b>4) Grouping selector:</b> The grouping selector selects all the HTML elements with the same style sefinitions.</p>
+        <pre>Example:
+    h1, h2, p{
+        text-align: center;
+        color: red;
+    }
+        </pre>
+
+        <p><b>2) Universal selector:</b> The Universal selector selects all HTML elements on the page.</p>
+        <pre>Example:
+    *{
+        text-align: center;
+        color: red;
+    }
+        </pre>
+    </DIV>
+</body>
+</html>
